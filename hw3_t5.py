@@ -1,4 +1,4 @@
-str1=4
+str1=5
 str2=3
 try:
     rez=str1+str2

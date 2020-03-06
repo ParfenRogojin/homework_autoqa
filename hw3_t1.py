@@ -23,4 +23,3 @@ print("   Задание 2")
 print("1/2 (L(+1)): "+str1[0:(int)(len(str1)/2+len(str1)%2)]+ ' <-------> '+str1[(int)(len(str1)/2+len(str1)%2):])
 str2=str1[(int)(len(str1)/2+len(str1)%2):]+str1[0:(int)(len(str1)/2+len(str1)%2)]
 print(str2)
-

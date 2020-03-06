@@ -20,4 +20,3 @@ while (int)(num % 2) == 0:
     num = (int)(num / 2)
     print(num, end=' ')
 print('\nделили нацело на два: ' + str(cntIter) + '-раз(а)')
-

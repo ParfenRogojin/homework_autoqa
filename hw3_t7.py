@@ -18,4 +18,3 @@ for item in range(len(str2)):
     else:
         dict1.update({str2[item].capitalize():1})
 print('сколько раз встречается каждое слово: '+str(dict1))
-

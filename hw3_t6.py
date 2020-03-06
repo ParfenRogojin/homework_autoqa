@@ -64,4 +64,3 @@ print(getTypeTriangle(5,5,5))
 print('*******distance')
 print(distance(0,4,3,0))
 print(distance(1,5,4,1))
-
