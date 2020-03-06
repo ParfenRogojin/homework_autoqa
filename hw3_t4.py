@@ -47,3 +47,4 @@ for el in range(len(listNatNumb)-1):
         tempCnt = 0
 print("***********************************************")
 print('!Победило число ' + str(rezultNum) + ', встречается ' + str(maxCnt + 1) + ' раз подряд, начиная с позиции(отсчет c нуля) '+ str(rezultPoz-maxCnt))
+
