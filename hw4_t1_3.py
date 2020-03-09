@@ -14,18 +14,19 @@ def clrNonAlph(s):
             rez+=ch
     return rez
 
-print(createSong(3, 3, 0))
-print(createSong(4, 4, 1))
+if __name__=='__main__':
+    print(createSong(3, 3, 0))
+    print(createSong(4, 4, 1))
 
-print(secondMin(56,12,78,13,23,34,56,67))
-print(secondMin(4,7,2,4,5,8,1,0))
-print(secondMin('fg','we','aa','ab','jk','as','sa'))
+    print(secondMin(56,12,78,13,23,34,56,67))
+    print(secondMin(4,7,2,4,5,8,1,0))
+    print(secondMin('fg','we','aa','ab','jk','as','sa'))
 
-print(clrNonAlph('asddgr45-sfsds+.sdfgsd'))
-print(clrNonAlph('asdSDd5-sfs+.sАПgsd'))
-#print(clrNonAlph(5))
-try:
-    print(clrNonAlph(5))
-except Exception as e:
-    print('Exception: '+str(e))
+    print(clrNonAlph('asddgr45-sfsds+.sdfgsd'))
+    print(clrNonAlph('asdSDd5-sfs+.sАПgsd'))
+    #print(clrNonAlph(5))
+    try:
+        print(clrNonAlph(5))
+    except Exception as e:
+        print('Exception: '+str(e))
 

@@ -34,7 +34,7 @@ def getTypeTriangle(a,b,c):
     if isTriangle(a,b,c):
         if a==b==c:
             return 'Equilateral triangle (равносторонний)'
-        elif a==b or b==c or a==c:
+        elif a == b or b == c or a == c:
             return 'Isosceles triangle (равнобедренный)'
         else:
             return 'Versatile triangle (разносторонний)'
@@ -52,15 +52,16 @@ def distance(x1,y1,x2,y2):
 #print(is_year_leap(1984))
 #print(is_year_leap(1980))
 
-print(isTriangle(3,4,5))
-print(isTriangle(9,4,5))
-print(isTriangle(4.1,9,5))
-print('*******type triangle')
-print(getTypeTriangle(9,4,5))
-print(getTypeTriangle(3,4,5))
-print(getTypeTriangle(4.1,9,5))
-print(getTypeTriangle(9,5,5))
-print(getTypeTriangle(5,5,5))
-print('*******distance')
-print(distance(0,4,3,0))
-print(distance(1,5,4,1))
+if __name__ == '__main__':
+    print(isTriangle(3,4,5))
+    print(isTriangle(9,4,5))
+    print(isTriangle(4.1,9,5))
+    print('*******type triangle')
+    print(getTypeTriangle(9,4,5))
+    print(getTypeTriangle(3,4,5))
+    print(getTypeTriangle(4.1,9,5))
+    print(getTypeTriangle(9,5,5))
+    print(getTypeTriangle(5,5,5))
+    print('*******distance')
+    print(distance(0,4,3,0))
+    print(distance(1,5,4,1))
