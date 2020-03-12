@@ -14,7 +14,7 @@ class Container_Generators:
 
     def generator_2_div3(self, n=20):
         # 2) У вас есть список целых чисел. Создайте новый список остатков от деления на 3 чисел из исходного списка
-        rezult_list = []
+        # rezult_list = []
         # for i in range(n + 1):
         #     rezult_list.append(i // 3)
         # return rezult_list
@@ -53,15 +53,14 @@ class Container_Generators:
         return [clrNonAlph(get_dict.get(item)).lower() for item in get_dict if type(get_dict.get(item)) == str]
 
 if __name__ == '__main__':
-    print('# 1) Создайте список 2 в степени N, где N от 0 до 20.')
     cont = Container_Generators()
-    rez = cont.generator_1_2N()
-    print(rez)
+
+    print('# 1) Создайте список 2 в степени N, где N от 0 до 20.')
+    print(cont.generator_1_2N())
 
     print(
         '\n# 2) У вас есть список целых чисел. Создайте новый список остатков от деления на 3 чисел из исходного списка')
-    rez = cont.generator_2_div3()
-    print(rez)
+    print(cont.generator_2_div3())
 
     print(
         '\n# 3) вас есть список, в котором могут быть разные типы данных. Создайте новый список только чисел из этого списка')
