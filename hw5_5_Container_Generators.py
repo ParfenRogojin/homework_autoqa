@@ -42,7 +42,7 @@ class Container_Generators:
         # for item in get_dict:
         #     rez_dict[item] = type(get_dict.get(item))
         # return rez_dict
-        return [str(type(get_dict.get(item)))[8:-2:] for item in get_dict]
+        return {k:str(type(v))[8:-2:] for k,v in get_dict.items()}
 
     def generator_5_str_in_item(self, get_dict):
         # rez_dict = {}
@@ -50,7 +50,7 @@ class Container_Generators:
         #     if type(get_dict.get(item)) == str:
         #         rez_dict[item] = clrNonAlph(get_dict.get(item)).lower()
         # return rez_dict
-        return [clrNonAlph(get_dict.get(item)).lower() for item in get_dict if type(get_dict.get(item)) == str]
+        return {k:(clrNonAlph(item).lower()) for k,item in get_dict.items() if type(item) == str}
 
 if __name__ == '__main__':
     cont = Container_Generators()
@@ -84,5 +84,8 @@ if __name__ == '__main__':
     print(cont.generator_5_type_in_item(srcDic))
     print(
         '\n## Сгенерируйте новый словарь с только парами ключ-значение, если значение исходного словаря было строкой. \nЗначения нового словаря должны быть переведены в нижний регистр и удалены небуквенные символы из них')
+    srcDic = {'name': 'Leonid777', 'surname': 'First', 'age': 1600, 'position999': 'King', 'address': 'Sparta',
+              'Skills': ['God', ]}
     print(srcDic)
+
     print(cont.generator_5_str_in_item(srcDic))
